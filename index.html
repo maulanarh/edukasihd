@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cetak Form Edukasi RM 34 &amp; RM 33</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap">
+<style>
+:root{--bg:#f3f6f6;--card:#fff;--ink:#17262b;--mut:#5b6f75;--line:#d3dde0;--ac:#0b6e6e;--acx:#fff;--paper:#fff;--warn:#8a5a00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a1d;--card:#182428;--ink:#e6eff1;--mut:#97aab0;--line:#2c3d42;--ac:#4cc3bd;--acx:#06201f;--warn:#e0b45a}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,"Segoe UI",Roboto,sans-serif}
+.app{display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:16px;padding:16px;max-width:1300px;margin:auto}
+@media(max-width:820px){.app{grid-template-columns:1fr}}
+h1{font-size:20px;margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px}
+.card h2{font-size:15px;margin:0 0 10px}
+label{display:block;font-size:12.5px;color:var(--mut);margin:8px 0 3px}
+input[type=text],input[type=date],input[type=number],select{width:100%;padding:8px 9px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);font:inherit}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.r3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.chk{display:flex;gap:8px;align-items:center;margin:5px 0;font-size:14px;color:var(--ink)}
+.chk input{width:18px;height:18px;accent-color:var(--ac)}
+button{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button.p{background:var(--ac);color:var(--acx);border-color:var(--ac);font-weight:600}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ac);outline-offset:1px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{padding:5px 10px;font-size:13px}
+.note{font-size:12.5px;color:var(--mut)}.warn{color:var(--warn)}
+.pt{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+.pt span{cursor:pointer;flex:1}
+.pt button{padding:3px 8px;font-size:12px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tabs button[aria-pressed=true]{background:var(--ac);color:var(--acx);border-color:var(--ac)}
+#stage{background:#9aa7ab;border-radius:10px;padding:14px;overflow:auto;max-height:calc(100vh - 32px);position:sticky;top:16px}
+@media(max-width:820px){#stage{position:static;max-height:none}}
+.sheet{--z:.5;zoom:var(--z);position:relative;width:215mm;height:329mm;background:var(--paper);margin:0 auto 14px;overflow:hidden;box-shadow:0 2px 10px #0004;color:#000}
+.sheet.hid{display:none}
+.tag{position:absolute;left:4mm;top:3mm;font:11px system-ui;color:#999}
+.grid .sheet{background-image:linear-gradient(#0a8a8a33 1px,transparent 1px),linear-gradient(90deg,#0a8a8a33 1px,transparent 1px);background-size:10mm 10mm}
+.ov{position:absolute;inset:0}
+.m{position:absolute;white-space:nowrap;font:500 12.5pt/1 "Caveat","Segoe Print","Bradley Hand","Comic Sans MS",cursive;color:#102a6b;transform:translateY(-50%)}
+.m.c{transform:translate(-50%,-50%)}
+.m.ck{font:700 15pt/1 "Caveat","Segoe Print",cursive}
+.m.ci{border:.45mm solid #102a6b;border-radius:50%}
+.m.sg{font:700 19pt/1 "Caveat","Segoe Print",cursive;transform:translateY(-50%) rotate(-5deg)}
+.m.ls{white-space:normal;line-height:8.2mm;transform:none}
+@media print{
+ @page{size:215mm 330mm;margin:0}
+ body{background:#fff}.app>div:first-child,.sub,#stage .tag{display:none}
+ .app{display:block;padding:0;margin:0;max-width:none}
+ #stage{background:none;padding:0;max-height:none;position:static;overflow:visible;border-radius:0}
+ .sheet{zoom:1;margin:0;box-shadow:none;break-after:page;background:none!important}
+ .sheet:last-child{break-after:auto}
+ .m{color:#000!important}.m.ci{border-color:#000}
+ :root{padding:0}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<div>
+ <h1>Cetak Form Edukasi</h1>
+ <p class="sub">Mengisi langsung ke lembar RM 34 (depan &amp; belakang) dan RM 33 RSUD Dr. Iskak yang sudah tercetak.</p>
+
+ <div class="card"><h2>Identitas pasien</h2>
+  <label for="nama">Nama pasien</label><input type="text" id="nama" placeholder="Tn. ...">
+  <label for="norm">No. RM (8 digit)</label><input type="text" id="norm" inputmode="numeric" maxlength="8">
+  <div class="r2"><div><label for="jk">Jenis kelamin</label><select id="jk"><option>L</option><option>P</option></select></div>
+  <div><label for="kelas">Kelas</label><input type="text" id="kelas"></div></div>
+  <div class="r2"><div><label for="lahir">Tgl. lahir</label><input type="date" id="lahir"></div>
+  <div><label for="umur">Umur</label><div class="r2"><input type="number" id="umur" min="0"><select id="satuan"><option>Thn</option><option>Bln</option><option>Hr</option></select></div></div></div>
+  <div class="r2"><div><label for="masuk">Tgl. masuk</label><input type="date" id="masuk"></div>
+  <div><label for="jam">Jam</label><input type="text" id="jam" placeholder="05.30"></div></div>
+  <div class="row"><button class="pill" data-jam="05.30">Pagi 05.30</button><button class="pill" data-jam="11.30">Siang 11.30</button><button class="pill" data-jam="17.30">Malam 17.30</button></div>
+ </div>
+
+ <div class="card"><h2>Bagian A, bahasa</h2>
+  <div class="r2"><div><label for="bahasa">Bahasa yang dipakai</label><select id="bahasa"><option value="lain">Lainnya</option><option value="id">Indonesia</option></select></div>
+  <div><label for="bahasaLain">Tulisan "Lainnya"</label><input type="text" id="bahasaLain"></div></div>
+ </div>
+
+ <div class="card"><h2>Bagian B, program edukasi yang dicentang</h2><div id="items"></div>
+  <div class="chk"><input type="checkbox" id="cek33"><label for="cek33" style="margin:0;color:var(--ink)">Centang "Rencana Asuhan" di RM 33</label></div></div>
+
+ <div class="card"><h2>Catatan informasi</h2>
+  <div class="r2"><div><label for="perawat">Nama pemberi informasi</label><input type="text" id="perawat"></div>
+  <div><label for="bidang">Bidang disiplin (RM 33)</label><input type="text" id="bidang"></div></div>
+  <div class="r2"><div><label for="tempat">Tempat</label><input type="text" id="tempat"></div>
+  <div><label for="metode">Metode</label><input type="text" id="metode"></div></div>
+  <div class="chk"><input type="checkbox" id="isiTgl"><label for="isiTgl" style="margin:0;color:var(--ink)">Isi kolom Tgl/Jam di catatan</label></div>
+ </div>
+
+ <div class="card"><h2>Cetak</h2>
+  <div class="chk"><input type="checkbox" id="pa"><label for="pa" style="margin:0;color:var(--ink)">RM 34 depan</label></div>
+  <div class="chk"><input type="checkbox" id="pb"><label for="pb" style="margin:0;color:var(--ink)">RM 34 belakang</label></div>
+  <div class="chk"><input type="checkbox" id="pc"><label for="pc" style="margin:0;color:var(--ink)">RM 33</label></div>
+  <div class="row"><button class="p" id="print1">Cetak pasien ini</button><button id="printAll">Cetak semua tersimpan</button></div>
+  <div class="row"><button id="word1">Unduh Word pasien ini</button><button id="wordAll">Unduh Word semua tersimpan</button></div>
+  <p class="note" id="wordMsg">File Word memakai kotak teks per bidang dan font tulisan tangan (Segoe Print). Posisi geser (X, Y) ikut terbawa. Setelah diunduh, posisi masih bisa disesuaikan di Word.</p>
+  <p class="note">Kertas F4 (215 × 330 mm). Di dialog cetak pilih ukuran F4, skala 100%, tanpa header/footer.</p>
+ </div>
+
+ <div class="card"><h2>Geser posisi tulisan</h2>
+  <p class="note warn">Posisi awal adalah perkiraan dari foto. Cetak dulu di kertas HVS, tumpuk dengan lembar asli di depan lampu, lalu geser (mm) sampai pas. Tersimpan otomatis.</p>
+  <div class="r3" id="offs"></div>
+  <div class="chk" style="margin-top:10px"><input type="checkbox" id="gridOn"><label for="gridOn" style="margin:0;color:var(--ink)">Tampilkan garis bantu 10 mm (pratinjau saja)</label></div>
+  <div class="row"><button id="resetOff">Reset posisi</button></div>
+ </div>
+
+ <div class="card"><h2>Daftar pasien tersimpan</h2>
+  <div class="row" style="margin-top:0"><button id="save">Simpan / perbarui pasien ini</button></div>
+  <div id="list"></div>
+  <p class="note">Tersimpan di browser ini saja. Klik nama untuk memuat.</p>
+ </div>
+</div>
+
+<div>
+ <div class="tabs" id="zoomTabs"><button data-z=".4" aria-pressed="false">Kecil</button><button data-z=".55" aria-pressed="true">Sedang</button><button data-z=".8" aria-pressed="false">Besar</button></div>
+ <div id="stage"></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/docx@7.8.2/build/index.js"></script>
+<script>
+const ITEMS=[
+["alat","Penggunaan alat medis","Penggunaan Alat Medis",166.5],
+["obat","Penggunaan obat secara aman dan efektif","Penggunaan obat aman & efektif",172.9],
+["nyeri","Manajemen nyeri","Manajemen nyeri",179.2],
+["luka","Perawatan luka","Perawatan Luka",185.5],
+["nutrisi","Pedoman nutrisi","Pedoman Nutrisi",192],
+["interaksi","Interaksi obat dan makanan","Interaksi obat & makanan",198.5],
+["rehab","Teknik rehabilitasi","Teknik rehabilitasi",205],
+["cuci","Teknik cuci tangan","T. Cuci tangan",211.7],
+["jatuh","Edukasi resiko jatuh","Edukasi Resiko Jatuh",218],
+["lanjut","Perawatan lanjutan setelah pasien pulang","Perawatan Lanjutan Setelah Px pulang",224.7]];
+const TEXT=["nama","norm","jk","kelas","lahir","umur","satuan","masuk","jam","bahasa","bahasaLain","perawat","bidang","tempat","metode"];
+const today=new Date(),iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const DEF=()=>({nama:"",norm:"",jk:"L",kelas:"III",lahir:"",umur:"",satuan:"Thn",masuk:iso(today),jam:"05.30",bahasa:"lain",bahasaLain:"Jawa",perawat:"",bidang:"Perawat",tempat:"HD",metode:"1.2.4",
+ items:["alat","nyeri","luka","cuci","jatuh","lanjut"],cek33:false,isiTgl:false,pa:true,pb:true,pc:true,off:{a:[0,0],b:[0,0],c:[0,0]},zoom:.55,grid:false});
+let S=DEF(),LIST=[];
+const KEY="formEdukasi.v1";
+try{const raw=localStorage.getItem(KEY);if(raw){const j=JSON.parse(raw);S=Object.assign(DEF(),j.S||{});S.off=Object.assign(DEF().off,S.off);LIST=j.LIST||[]}}catch(e){}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify({S,LIST}))}catch(e){}}
+const $=id=>document.getElementById(id);
+const fmt=s=>{if(!s)return"";const[a,b,c]=s.split("-");return c+"/"+b+"/"+a};
+const fmtShort=s=>{if(!s)return"";const[a,b,c]=s.split("-");return c+"/"+b+"/"+a.slice(2)};
+
+/* form */
+const itemsBox=$("items");
+ITEMS.forEach(([k,lab])=>{const d=document.createElement("div");d.className="chk";d.innerHTML='<input type="checkbox" id="it_'+k+'"><label for="it_'+k+'" style="margin:0;color:var(--ink)"></label>';d.lastChild.textContent=lab;itemsBox.appendChild(d)});
+const offBox=$("offs");
+[["a","RM 34 depan"],["b","RM 34 belakang"],["c","RM 33"]].forEach(([k,lab])=>{
+ const d=document.createElement("div");d.innerHTML='<label style="margin-top:0"></label><input type="number" step="0.5" id="ox_'+k+'" aria-label="X '+lab+'" placeholder="X"><input type="number" step="0.5" id="oy_'+k+'" aria-label="Y '+lab+'" placeholder="Y" style="margin-top:4px">';
+ d.firstChild.textContent=lab+" (X, Y mm)";offBox.appendChild(d)});
+function toForm(){
+ TEXT.forEach(k=>$(k).value=S[k]);
+ ITEMS.forEach(([k])=>$("it_"+k).checked=S.items.includes(k));
+ ["cek33","isiTgl","pa","pb","pc"].forEach(k=>$(k).checked=S[k]);
+ ["a","b","c"].forEach(k=>{$("ox_"+k).value=S.off[k][0];$("oy_"+k).value=S.off[k][1]});
+ $("gridOn").checked=S.grid;
+}
+function fromForm(){
+ TEXT.forEach(k=>S[k]=$(k).value);
+ S.items=ITEMS.filter(([k])=>$("it_"+k).checked).map(i=>i[0]);
+ ["cek33","isiTgl","pa","pb","pc"].forEach(k=>S[k]=$(k).checked);
+ ["a","b","c"].forEach(k=>S.off[k]=[parseFloat($("ox_"+k).value)||0,parseFloat($("oy_"+k).value)||0]);
+ S.grid=$("gridOn").checked;
+}
+function calcUmur(){
+ if(!S.lahir)return;const b=new Date(S.lahir),r=S.masuk?new Date(S.masuk):today;
+ let y=r.getFullYear()-b.getFullYear();const m=r.getMonth()-b.getMonth();if(m<0||(m===0&&r.getDate()<b.getDate()))y--;
+ if(y>=1){S.umur=y;S.satuan="Thn"}else{let mo=(r.getFullYear()-b.getFullYear())*12+r.getMonth()-b.getMonth();if(r.getDate()<b.getDate())mo--;S.umur=Math.max(mo,0);S.satuan="Bln"}
+ $("umur").value=S.umur;$("satuan").value=S.satuan;
+}
+
+/* sheet building */
+function mk(ov,x,y,txt,cls){const d=document.createElement("div");d.className="m "+(cls||"");d.style.left=x+"mm";d.style.top=y+"mm";d.textContent=txt;ov.appendChild(d);return d}
+function circ(ov,x,y,w,h){const d=document.createElement("div");d.className="m c ci";d.style.left=x+"mm";d.style.top=y+"mm";d.style.width=w+"mm";d.style.height=(h||w)+"mm";ov.appendChild(d)}
+function ck(ov,x,y){mk(ov,x,y,"✓","c ck")}
+function header(ov,p){
+ mk(ov,95,23,p.nama);
+ [...(p.norm||"").slice(0,8)].forEach((ch,i)=>mk(ov,155.6+i*6+3,23.7,ch,"c"));
+ circ(ov,p.jk==="P"?101.5:96.5,30.4,4.8);
+ mk(ov,156,30.6,fmt(p.lahir));
+ mk(ov,176,30.6,p.umur===""?"":String(p.umur));
+ circ(ov,{Thn:190,Bln:196.3,Hr:201}[p.satuan]||190,30.6,p.satuan==="Thn"?6.5:6);
+ mk(ov,103,37.5,"HD");mk(ov,125,37.5,p.kelas);
+ mk(ov,156,38.8,fmt(p.masuk));mk(ov,191,38.8,p.jam);
+}
+function sheetA(ov,p){
+ header(ov,p);
+ ck(ov,124,58.5);
+ if(p.bahasa==="id")ck(ov,122.7,78.8);else{ck(ov,123.5,83);mk(ov,146,86.5,p.bahasaLain,"")}
+ ck(ov,154,98.8);ck(ov,31.7,119);ck(ov,159.7,144.6);
+ ITEMS.forEach(([k,,,y])=>{if(p.items.includes(k))ck(ov,30.5,y)});
+}
+function infoList(p){return ITEMS.filter(i=>p.items.includes(i[0])).map((i,n)=>(n+1)+". "+i[2])}
+function sheetB(ov,p){
+ const tx=10;
+ const l=mk(ov,tx+14,31,"","ls");l.style.width="50mm";l.style.fontSize="13pt";l.innerHTML="";
+ infoList(p).forEach(t=>{const s=document.createElement("div");s.textContent=t;l.appendChild(s)});
+ if(p.isiTgl){const t=mk(ov,tx+1,34,"","ls");t.style.width="11mm";t.style.fontSize="9pt";t.style.lineHeight="4mm";t.innerHTML="";[fmtShort(p.masuk),p.jam].forEach(v=>{const s=document.createElement("div");s.textContent=v;t.appendChild(s)})}
+ mk(ov,tx+99,57,p.tempat);mk(ov,tx+119,57,p.metode);mk(ov,tx+135,59,p.perawat,"sg");
+}
+function sheetC(ov,p){
+ const tx=28.5;
+ header(ov,p);
+ if(p.cek33)ck(ov,30.2,82.8);
+ mk(ov,tx+10.8,134,"1. Rencana Asuhan");
+ mk(ov,tx+94,134,p.tempat);mk(ov,tx+113,134,p.metode);mk(ov,tx+131,136,p.perawat,"sg");mk(ov,tx+156,134,p.bidang);
+}
+const PG=[["a","RM 34 depan",sheetA],["b","RM 34 belakang",sheetB],["c","RM 33",sheetC]];
+function render(list){
+ const st=$("stage");st.innerHTML="";st.classList.toggle("grid",S.grid);
+ list.forEach(p=>PG.forEach(([k,lab,fn])=>{
+  if(!S["p"+(k==="a"?"a":k==="b"?"b":"c")])return;
+  const sh=document.createElement("div");sh.className="sheet";sh.style.setProperty("--z",S.zoom);
+  const tag=document.createElement("div");tag.className="tag";tag.textContent=lab+(p.nama?" · "+p.nama:"");sh.appendChild(tag);
+  const ov=document.createElement("div");ov.className="ov";ov.style.transform="translate("+S.off[k][0]+"mm,"+S.off[k][1]+"mm)";ov.dataset.dx=S.off[k][0];ov.dataset.dy=S.off[k][1];sh.appendChild(ov);
+  fn(ov,p);st.appendChild(sh);
+ }));
+}
+function refresh(){fromForm();persist();render([S])}
+
+/* list */
+function pData(){const o={};TEXT.forEach(k=>o[k]=S[k]);o.items=[...S.items];o.cek33=S.cek33;o.isiTgl=S.isiTgl;return o}
+function drawList(){
+ const b=$("list");b.innerHTML="";
+ if(!LIST.length){const n=document.createElement("p");n.className="note";n.textContent="Belum ada pasien tersimpan. Isi identitas lalu pilih Simpan.";b.appendChild(n);return}
+ LIST.forEach((p,i)=>{
+  const d=document.createElement("div");d.className="pt";
+  const s=document.createElement("span");s.textContent=(p.nama||"(tanpa nama)")+(p.norm?" · "+p.norm:"");
+  s.tabIndex=0;s.onclick=()=>{Object.assign(S,p);toForm();render([S]);persist()};s.onkeydown=e=>{if(e.key==="Enter")s.onclick()};
+  const x=document.createElement("button");x.textContent="Hapus";x.onclick=()=>{LIST.splice(i,1);persist();drawList()};
+  d.append(s,x);b.appendChild(d)});
+}
+$("save").onclick=()=>{fromForm();const p=pData();const i=LIST.findIndex(q=>q.norm&&q.norm===p.norm||(!p.norm&&q.nama===p.nama));if(i>=0)LIST[i]=p;else LIST.push(p);persist();drawList()};
+
+/* events */
+document.querySelectorAll("input,select").forEach(e=>{
+ e.addEventListener("input",()=>{if(e.id==="lahir"||e.id==="masuk"){fromForm();calcUmur()}refresh()});
+ e.addEventListener("change",()=>refresh());
+});
+document.querySelectorAll("[data-jam]").forEach(b=>b.onclick=()=>{$("jam").value=b.dataset.jam;refresh()});
+document.querySelectorAll("#zoomTabs button").forEach(b=>b.onclick=()=>{S.zoom=parseFloat(b.dataset.z);document.querySelectorAll("#zoomTabs button").forEach(x=>x.setAttribute("aria-pressed",x===b));persist();render([S])});
+$("resetOff").onclick=()=>{S.off=DEF().off;toForm();refresh()};
+function doPrint(list){fromForm();render(list);setTimeout(()=>{window.print();setTimeout(()=>render([S]),300)},100)}
+$("print1").onclick=()=>doPrint([S]);
+$("printAll").onclick=()=>{if(!LIST.length){alert("Belum ada pasien tersimpan.");return}doPrint(LIST)};
+
+/* Word export: membaca posisi dari lembar pratinjau */
+const TW=mm=>Math.round(mm*56.693);
+async function exportDocx(list,fname){
+ const D=window.docx,msg=$("wordMsg");
+ if(!D){msg.textContent="Pustaka Word belum termuat. Periksa koneksi internet lalu muat ulang halaman.";return}
+ fromForm();
+ if(!list.length){msg.textContent="Belum ada pasien tersimpan.";return}
+ if(!S.pa&&!S.pb&&!S.pc){msg.textContent="Pilih minimal satu lembar untuk dicetak.";return}
+ render(list);
+ const sections=[];
+ try{
+  document.querySelectorAll("#stage .sheet").forEach(sh=>{
+   const ov=sh.querySelector(".ov"),dx=parseFloat(ov.dataset.dx)||0,dy=parseFloat(ov.dataset.dy)||0,kids=[];
+   ov.querySelectorAll(".m").forEach(m=>{
+    const c=" "+m.className+" ",ctr=c.includes(" c "),ci=c.includes(" ci "),ck=c.includes(" ck "),sg=c.includes(" sg "),ls=c.includes(" ls ");
+    const x=parseFloat(m.style.left)+dx,y=parseFloat(m.style.top)+dy;
+    const lines=m.children.length?[...m.children].map(n=>n.textContent):[m.textContent];
+    if(!lines.join("").trim()&&!ci)return;
+    let w,h,fx,fy,size=20,font="Segoe Print",txt=lines,bold=false,line;
+    if(ci){const d=parseFloat(m.style.width)||5;txt=["\u25EF"];font="Segoe UI Symbol";size=Math.round(d*2.835/0.85*2);w=14;h=d+2;fx=x-7;fy=y-h/2}
+    else if(ck){txt=["\u2713"];font="Segoe UI Symbol";size=30;bold=true;w=12;h=6;fx=x-6;fy=y-3}
+    else if(ctr){w=8;h=5.5;fx=x-4;fy=y-2.8;line=TW(5.5)}
+    else if(sg){size=34;w=Math.min(50,214-x);h=8;fx=x;fy=y-4}
+    else if(ls){size=Math.round((parseFloat(m.style.fontSize)||13)*2*0.8);const lh=parseFloat(m.style.lineHeight)||8.2;w=parseFloat(m.style.width)||50;h=lh*lines.length;fx=x;fy=y;line=TW(lh)}
+    else{w=Math.min(60,214-x);h=5.5;fx=x;fy=y-2.8;line=TW(5.5)}
+    txt.forEach(t=>{
+     const sp={before:0,after:0};if(line){sp.line=line;if(D.LineRuleType)sp.lineRule=D.LineRuleType.EXACT}
+     kids.push(new D.Paragraph({
+      frame:{type:"absolute",position:{x:TW(Math.max(fx,0)),y:TW(Math.max(fy,0))},width:TW(w),height:TW(h),anchor:{horizontal:D.FrameAnchorType.PAGE,vertical:D.FrameAnchorType.PAGE},rule:D.HeightRule.AT_LEAST},
+      alignment:(ctr||ci||ck)?D.AlignmentType.CENTER:D.AlignmentType.LEFT,spacing:sp,
+      children:[new D.TextRun({text:t,font:font,size:size,bold:bold,color:"000000"})]}));
+    });
+   });
+   kids.push(new D.Paragraph({children:[new D.TextRun({text:"",size:2})]}));
+   sections.push({properties:{page:{size:{width:TW(215),height:TW(329)},margin:{top:0,right:0,bottom:0,left:0,header:0,footer:0}}},children:kids});
+  });
+  const blob=await D.Packer.toBlob(new D.Document({creator:"Form Edukasi",sections:sections}));
+  render([S]);
+  let dl=null;
+  try{dl=await window.claude.use("downloads")}catch(e){}
+  if(dl){
+   try{await dl.save({filename:fname,data:blob});msg.textContent="File Word siap: "+fname}
+   catch(e){msg.textContent=(e&&e.code==="declined")?"Unduhan dibatalkan.":"Unduhan tidak bisa dilakukan di tampilan ini."}
+  }else{
+   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=fname;document.body.appendChild(a);a.click();a.remove();msg.textContent="File Word diunduh: "+fname;
+  }
+ }catch(e){render([S]);msg.textContent="Gagal membuat file Word: "+(e&&e.message||e)}
+}
+const safe=s=>(s||"pasien").replace(/[^\w\-]+/g,"_").replace(/^_+|_+$/g,"")||"pasien";
+$("word1").onclick=()=>{fromForm();exportDocx([S],"Form-Edukasi-"+safe(S.nama)+".docx")};
+$("wordAll").onclick=()=>exportDocx(LIST,"Form-Edukasi-semua-pasien.docx");
+
+toForm();
+document.querySelectorAll("#zoomTabs button").forEach(x=>x.setAttribute("aria-pressed",parseFloat(x.dataset.z)===S.zoom));
+drawList();render([S]);
+</script>
+</body>
+</html>
